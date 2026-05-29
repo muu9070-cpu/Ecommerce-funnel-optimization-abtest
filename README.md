@@ -177,18 +177,25 @@ A/B testing results, conversion uplift, confidence intervals, estimated GMV impa
 
 ## 🎨 Dashboard Showcase
 
-```markdown
+### Executive Overview
+
 ![Executive Overview](assets/page1_executive_overview.png)
+
+### Product Analysis
 
 ![Product Analysis](assets/page2_product_analysis.png)
 
+### Customer Analysis
+
 ![Customer Analysis](assets/page3_user_analysis.png)
+
+### Retention & Funnel
 
 ![Retention & Funnel](assets/page4_retention_funnel.png)
 
-![Experiment Analysis](assets/page5_experiment_analysis.png)
+### Experiment Analysis
 
-```
+![Experiment Analysis](assets/page5_experiment_analysis.png)
 
 ---
 
