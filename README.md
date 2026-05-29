@@ -1,131 +1,103 @@
-# E-Commerce Funnel Optimization & A/B Testing Analysis
+# E-Commerce Funnel Optimization & A/B Testing
 
-This project focuses on identifying conversion bottlenecks in an e-commerce platform and evaluating intervention strategies through statistical experimentation.
-
-The project covers the complete analytics workflow, including:
-
-- SQL-based business analysis
-- Funnel analysis
-- User segmentation
-- Retention analysis
-- A/B testing simulation
-- Statistical significance testing
-- Power BI dashboard development
-
-The objective is to improve purchase conversion and estimate potential GMV uplift through data-driven experimentation.
+This project focuses on identifying conversion bottlenecks in an e-commerce platform and evaluating intervention strategies through statistical experimentation. It follows a full data analytics workflow, including SQL-based analysis, Python-driven retention & funnel analysis, user segmentation, A/B testing, statistical significance testing, and Power BI dashboard visualization.
 
 ---
 
 ## 📌 1. Business Problem
 
-Although the platform generated substantial traffic, overall purchase conversion remained relatively low.
+Despite substantial traffic, overall purchase conversion remained low.
 
-Key findings:
+Key observations:
 
-- View events accounted for 96.81% of total activity
-- Cart conversion rate was only 1.55%
-- Purchase conversion rate was only 1.75%
-- Repeat user ratio remained below 3%
+- **View events**: 96.81% of total activity  
+- **Cart conversion rate**: 1.55%  
+- **Purchase conversion rate**: 1.75%  
+- **Repeat user ratio**: below 3%
 
-These observations indicate significant friction in the purchase funnel and opportunities for conversion optimization.
+These indicate significant friction in the purchase funnel and opportunities for optimization.
 
 ---
 
-## 🛠️ 2. SQL Business Analysis
+## 🛠️ 2. SQL & Python Analysis
 
-SQL was used to build analytical datasets covering:
+SQL and Python were used to build analytical datasets covering:
 
 ### Funnel Analysis
-
-View → Cart → Purchase
+- User journey: View → Cart → Purchase  
+- Conversion rates calculated for each stage.
 
 ### User Segmentation
-
-Low Value / Medium Value / High Value
+- Low / Medium / High Value users based on cumulative purchase amount.
 
 ### Retention Analysis
-
-Daily retention tracking
+- Day-1 retention trend for each cohort  
+- Calculated in Python with proper datetime handling.
 
 ### Product Performance
-
-Category GMV, Brand GMV, Average Selling Price
+- Category GMV  
+- Brand GMV  
+- Average selling price  
 
 ---
 
-## 📊 3. Key Business Findings
+## 📊 3. Key Findings
 
 ### Funnel Drop-Off
-
-Most users remain in the browsing stage.
-
-Conversion sharply declines between:
-View → Cart
-Cart → Purchase
-
+- Most users remain in browsing stage  
+- Sharp drop between **View → Cart** and **Cart → Purchase**
 
 ### User Structure
-
-Medium-value and low-value users account for the majority of the user base.
-
-High-value users contribute a disproportionate share of revenue.
+- Medium and low-value users dominate the base  
+- High-value users contribute majority of revenue
 
 ### Product Concentration
-
-Electronics dominate platform GMV.
-
-Smartphones contribute more than 60% of category revenue.
+- Electronics dominate platform GMV  
+- Smartphones account for >60% of category revenue
 
 ### Retention Challenge
-
-User retention declines continuously during the observed period.
-
-Repeat users account for only 2.09%.
+- Continuous decline in retention  
+- Repeat users only 2.09%
 
 ---
 
-## 💡 4. Optimization Hypothesis
+## 💡 4. Strategy Proposal
 
-Based on funnel analysis, a coupon reminder strategy was proposed.
+Based on funnel insights:
 
-### Hypothesis
+**Hypothesis:** Sending targeted coupon reminders will increase purchase conversion.
 
-Sending targeted coupon reminders to users with purchase intent can increase purchase conversion.
+Expected impact:
 
-Expected outcomes:
-
-- Higher purchase rate
-- Reduced funnel drop-off
-- Increased platform GMV
+- Increased purchase rate  
+- Reduced funnel drop-off  
+- Higher platform GMV
 
 ---
 
 ## 🧪 5. A/B Testing Simulation
 
-Users were randomly assigned into:
+Users randomly assigned:
 
-| Group | Description |
-|-------|-------------|
-| Control | No coupon reminder |
-| Treatment | Coupon reminder intervention |
+| Group     | Description                     |
+|-----------|---------------------------------|
+| Control   | No coupon reminder              |
+| Treatment | Coupon reminder intervention    |
 
-Python was used to simulate intervention outcomes and evaluate statistical significance.
+Python simulation used to evaluate intervention outcomes.
 
-### Experimental Results
+**Results:**
 
-| Metric | Control | Treatment | Absolute Uplift | Relative Uplift |
-|--------|---------|-----------|----------------|----------------|
-| Purchase Conversion | 1.70% | 2.44% | +0.74% | +43.5% |
+| Metric               | Control | Treatment | Absolute Uplift | Relative Uplift |
+|---------------------|---------|-----------|----------------|----------------|
+| Purchase Conversion  | 1.70%   | 2.44%     | +0.74%         | +43.5%         |
 
 ---
 
 ## 📏 6. Statistical Validation
 
 ### Independent T-Test
-
-P-Value < 0.001
-
-The difference between Control and Treatment groups is statistically significant.
+- P-value < 0.001 → statistically significant
 
 ### 95% Confidence Interval
 
@@ -134,90 +106,53 @@ The difference between Control and Treatment groups is statistically significant
 | Control   | 1.64% – 1.76%   |
 | Treatment | 2.37% – 2.51%   |
 
-The confidence intervals show a clear separation between groups, providing additional evidence that the intervention improves conversion performance.
-
 ---
 
 ## 💰 7. Estimated Business Impact
 
-Assuming the strategy is deployed platform-wide:
+Assuming platform-wide deployment:
 
-- **Additional Buyers:** 3,041 users  
-- **Estimated GMV Uplift:** $973K  
-
-The analysis suggests that coupon reminders can generate meaningful incremental revenue while reducing purchase funnel drop-off.
+- **Additional Buyers**: 3,041  
+- **Estimated GMV Uplift**: $973K  
 
 ---
 
 ## 📊 8. Power BI Dashboard
 
-The project includes a five-page executive dashboard.
-
-### Executive Overview
-
-Overall platform performance, KPIs, and GMV trend.
-
-### Product Performance Analysis
-
-Category and brand contribution, average product pricing.
-
-### Customer Behavior Analysis
-
-Top buyers, purchase distribution, user segmentation.
-
-### Retention & Funnel Analysis
-
-Retention trend, conversion funnel.
-
-### Experiment Analysis
-
-A/B testing results, conversion uplift, confidence intervals, estimated GMV impact.
+### Pages
+1. **Executive Overview** – KPIs, daily GMV trend, total & repeat users  
+2. **Product Analysis** – Top categories/brands, revenue concentration  
+3. **Customer Behavior Analysis** – Top buyers, purchase frequency, user segmentation  
+4. **Retention & Funnel** – Cohort retention, funnel conversion rates  
+5. **Experiment Analysis** – A/B testing, uplift, CI, estimated GMV impact
 
 ---
 
-## 🎨 Dashboard Showcase
+## 🎨 9. Dashboard Showcase
 
 ### 1. Executive Overview
-
-![Executive Overview](assets/page1_executive_overview.png)
-
-*Figure 1: Executive dashboard summarizing platform performance, including total GMV, active users, order volume, repeat purchase rate, and overall business trends.*
-
----
+![Executive Overview](assets/page1_executive_overview.png)  
+*Figure 1: Executive dashboard summarizing total GMV, active users, order volume, repeat purchase rate, and trends.*
 
 ### 2. Product Performance Analysis
-
-![Product Analysis](assets/page2_product_analysis.png)
-
-*Figure 2: Product performance dashboard showing category contribution, brand-level GMV distribution, average selling price, and product revenue concentration.*
-
----
+![Product Analysis](assets/page2_product_analysis.png)  
+*Figure 2: Product performance dashboard with category contribution, brand GMV, and average selling price.*
 
 ### 3. Customer Behavior Analysis
-
-![Customer Analysis](assets/page3_user_analysis.png)
-
-*Figure 3: Customer analytics dashboard highlighting top buyers, purchase frequency distribution, user value segmentation, and repeat purchase behavior.*
-
----
+![Customer Analysis](assets/page3_user_analysis.png)  
+*Figure 3: User analysis showing top buyers, purchase distribution, and user segmentation.*
 
 ### 4. Retention & Funnel Analysis
-
-![Retention & Funnel](assets/page4_retention_funnel.png)
-
-*Figure 4: Retention and funnel dashboard illustrating user retention trends, view-to-cart conversion, purchase conversion, and key funnel drop-off points.*
-
----
+![Retention & Funnel](assets/page4_retention_funnel.png)  
+*Figure 4: Retention trend and funnel conversion visualization, highlighting drop-off stages.*
 
 ### 5. Experiment Analysis
-
-![Experiment Analysis](assets/page5_experiment_analysis.png)
-
-*Figure 5: Experiment dashboard evaluating the effectiveness of coupon reminder interventions. The analysis compares Control and Treatment groups, measures conversion uplift, validates statistical significance through hypothesis testing, and estimates potential platform-wide GMV impact.*
+![Experiment Analysis](assets/page5_experiment_analysis.png)  
+*Figure 5: A/B testing results, conversion uplift, confidence intervals, and estimated GMV impact.*
 
 ---
 
-## 📁 Repository Structure
+## 📁 10. Repository Structure
 
 ```text
 Ecommerce-funnel-optimization-abtest
@@ -238,4 +173,3 @@ Ecommerce-funnel-optimization-abtest
     ├── page3_user_analysis.png
     ├── page4_retention_funnel.png
     └── page5_experiment_analysis.png
-```
