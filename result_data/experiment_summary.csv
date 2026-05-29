@@ -1,0 +1,2 @@
+metric,control_conversion,treatment_conversion,uplift,p_value,control_ci_low,control_ci_high,treatment_ci_low,treatment_ci_high,estimated_gmv_uplift
+purchase_rate,0.017034951662594285,0.024425500370644924,0.007390548708050639,4.092151778898938e-57,0.01646019694125973,0.017629415854750707,0.023738919716333934,0.02513142723588107,973248.0
