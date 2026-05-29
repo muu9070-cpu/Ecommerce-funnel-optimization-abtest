@@ -217,21 +217,25 @@ A/B testing results, conversion uplift, confidence intervals, estimated GMV impa
 
 ---
 
-## 📂 Repository Structure
+## 📁 Repository Structure
 
-├── sql
-│   └──ecommerce_analysis.sql
-├── notebooks
-│   ├── ecommerce_analysis.ipynb
-│   └── ab_test_real_users.ipynb
+```text
+Ecommerce-funnel-optimization-abtest
+│
+├── ecommerce_analysis.sql
+├── ecommerce_analysis.ipynb
+├── ab_test_real_users.ipynb
+├── README.md
+│
 ├── result_data
 │   ├── experiment_summary.csv
 │   ├── experiment_funnel.csv
 │   └── experiment_ci.csv
-├── assets
-│   ├── page1_executive_overview.png
-│   ├── page2_product_analysis.png
-│   ├── page3_user_analysis.png
-│   ├── page4_retention_funnel.png
-│   └── page5_experiment_analysis.png
-└── README.md
+│
+└── assets
+    ├── page1_executive_overview.png
+    ├── page2_product_analysis.png
+    ├── page3_user_analysis.png
+    ├── page4_retention_funnel.png
+    └── page5_experiment_analysis.png
+```
