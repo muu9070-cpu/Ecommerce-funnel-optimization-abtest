@@ -177,25 +177,43 @@ A/B testing results, conversion uplift, confidence intervals, estimated GMV impa
 
 ## 🎨 Dashboard Showcase
 
-### Executive Overview
+### 1. Executive Overview
 
 ![Executive Overview](assets/page1_executive_overview.png)
 
-### Product Analysis
+*Figure 1: Executive dashboard summarizing platform performance, including total GMV, active users, order volume, repeat purchase rate, and overall business trends.*
+
+---
+
+### 2. Product Performance Analysis
 
 ![Product Analysis](assets/page2_product_analysis.png)
 
-### Customer Analysis
+*Figure 2: Product performance dashboard showing category contribution, brand-level GMV distribution, average selling price, and product revenue concentration.*
+
+---
+
+### 3. Customer Behavior Analysis
 
 ![Customer Analysis](assets/page3_user_analysis.png)
 
-### Retention & Funnel
+*Figure 3: Customer analytics dashboard highlighting top buyers, purchase frequency distribution, user value segmentation, and repeat purchase behavior.*
+
+---
+
+### 4. Retention & Funnel Analysis
 
 ![Retention & Funnel](assets/page4_retention_funnel.png)
 
-### Experiment Analysis
+*Figure 4: Retention and funnel dashboard illustrating user retention trends, view-to-cart conversion, purchase conversion, and key funnel drop-off points.*
+
+---
+
+### 5. Experiment Analysis
 
 ![Experiment Analysis](assets/page5_experiment_analysis.png)
+
+*Figure 5: Experiment dashboard evaluating the effectiveness of coupon reminder interventions. The analysis compares Control and Treatment groups, measures conversion uplift, validates statistical significance through hypothesis testing, and estimates potential platform-wide GMV impact.*
 
 ---
 
