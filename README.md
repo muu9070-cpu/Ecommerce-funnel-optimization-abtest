@@ -16,7 +16,7 @@ The project combines **SQL, Python, statistical experimentation, and Power BI** 
 
 ---
 
-# 📌 Project Overview
+# 📌 1. Project Overview
 
 This project focuses on understanding user purchasing behavior and optimizing the e-commerce conversion funnel.
 
@@ -33,7 +33,7 @@ The objective is to transform raw behavioral data into actionable business decis
 
 ---
 
-# 🎯 Business Problem
+# 🎯 2. Business Problem
 
 Although the platform receives substantial traffic, only a small percentage of users complete purchases.
 
@@ -49,7 +49,7 @@ Several business questions were investigated:
 
 ---
 
-# 📊 Dataset Overview
+# 📊 3. Dataset Overview
 
 ### Data Source
 
@@ -75,7 +75,7 @@ Kaggle E-Commerce Behavior Dataset
 
 ---
 
-# 🛠 Data Preparation
+# 🛠 4. Data Preparation
 
 Before analysis, the dataset was cleaned and transformed.
 
@@ -105,7 +105,7 @@ Created:
 
 ---
 
-# 📈 Funnel Analysis
+# 📈 5. Funnel Analysis
 
 Customer behavior was modeled as:
 
@@ -133,7 +133,7 @@ Reducing friction between product exploration and checkout completion could gene
 
 ---
 
-# 👥 Customer Segmentation
+# 👥 6. Customer Segmentation
 
 Users were segmented based on purchasing behavior and spending contribution.
 
@@ -153,7 +153,7 @@ Users were segmented based on purchasing behavior and spending contribution.
 
 ---
 
-# 🔄 Retention Analysis
+# 🔄 7. Retention Analysis
 
 A cohort-based retention framework was implemented using user first-activity dates.
 
@@ -183,7 +183,7 @@ Customer acquisition alone is insufficient. Long-term growth requires stronger r
 
 ---
 
-# 💡 Optimization Hypothesis
+# 💡 8. Optimization Hypothesis
 
 Based on funnel findings, many users showed purchase intent but failed to complete transactions.
 
@@ -201,7 +201,7 @@ Users demonstrating purchasing intent receive reminder-based incentives.
 
 ---
 
-# 🧪 A/B Testing Framework
+# 🧪 9. A/B Testing Framework
 
 To evaluate the proposed strategy, an experimental framework was developed.
 
@@ -218,7 +218,7 @@ Purchase Conversion Rate
 
 ---
 
-# 📊 Experiment Results
+# 📊 10. Experiment Results
 
 ## Conversion Performance
 
@@ -246,7 +246,7 @@ The coupon reminder strategy significantly improved purchase conversion.
 
 ---
 
-# 📏 Statistical Validation
+# 📏 11. Statistical Validation
 
 To determine whether the observed uplift was statistically significant, hypothesis testing was performed.
 
@@ -274,7 +274,7 @@ The intervention effect is statistically significant.
 
 ---
 
-# 📐 Confidence Interval Analysis
+# 📐 12. Confidence Interval Analysis
 
 95% confidence intervals were calculated using the Wilson method.
 
@@ -289,7 +289,7 @@ The confidence intervals do not overlap, providing further evidence that the int
 
 ---
 
-# 💰 Business Impact Estimation
+# 💰 13. Business Impact Estimation
 
 To estimate the financial value of the intervention, platform-wide deployment was simulated.
 
@@ -311,13 +311,13 @@ A relatively small increase in conversion rate can produce substantial revenue g
 
 ---
 
-# 📊 Power BI Dashboard
+# 📊 14. Power BI Dashboard
 
 An interactive Power BI dashboard was developed to communicate findings.
 
 ### Dashboard Pages
 
-#### 1. Executive Overview
+#### (1). Executive Overview
 
 - GMV
 - Orders
@@ -325,26 +325,26 @@ An interactive Power BI dashboard was developed to communicate findings.
 - Repeat Users
 - Daily Trends
 
-#### 2. Product Analysis
+#### (2). Product Analysis
 
 - Category GMV
 - Brand Performance
 - Revenue Distribution
 - Average Selling Price
 
-#### 3. Customer Behavior Analysis
+#### (3). Customer Behavior Analysis
 
 - Top Buyers
 - Purchase Distribution
 - User Segmentation
 
-#### 4. Retention & Funnel Analysis
+#### (4). Retention & Funnel Analysis
 
 - Retention Trend
 - Funnel Conversion
 - User Journey Analysis
 
-#### 5. Experiment Analysis
+#### (5). Experiment Analysis
 
 - Control vs Treatment
 - Conversion Uplift
@@ -354,7 +354,7 @@ An interactive Power BI dashboard was developed to communicate findings.
 
 ---
 
-# 🎨 Dashboard Showcase
+# 🎨 15. Dashboard Showcase
 
 ## Executive Overview
 
@@ -396,7 +396,7 @@ An interactive Power BI dashboard was developed to communicate findings.
 
 ---
 
-# 🚀 Business Recommendations
+# 🚀 16. Business Recommendations
 
 ### Recommendation 1
 
@@ -420,7 +420,7 @@ Continue experimentation to validate future conversion initiatives.
 
 ---
 
-# 📁 Repository Structure
+# 📁 17. Repository Structure
 
 ```text
 Ecommerce-funnel-optimization-abtest
@@ -445,7 +445,7 @@ Ecommerce-funnel-optimization-abtest
 
 ---
 
-# 📚 Skills Demonstrated
+# 📚 18. Skills Demonstrated
 
 - SQL Analytics
 - Data Cleaning & Transformation
